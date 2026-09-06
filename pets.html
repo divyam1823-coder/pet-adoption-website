@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Available Pets for Adoption | Paws & Hearts</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Site Header & Nav -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        Paws &amp; <span class="highlight">Hearts</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pets.html" class="active">Available Pets</a>
+        <a href="adopt.html">Adoption Process</a>
+        <a href="about.html">About Us &amp; FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="adopt.html" class="btn btn-primary btn-sm">Apply to Adopt</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section" style="padding: 48px 0 24px;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 30px;">
+        <span class="section-tag">Find Your Companion</span>
+        <h1 class="section-title">Available Pets</h1>
+        <p class="section-subtitle">
+          All animals are microchipped, fully vaccinated, spayed/neutered, and ready to meet you.
+        </p>
+      </div>
+
+      <!-- Controls: Category Filters & Search -->
+      <div class="catalog-controls">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All Animals</button>
+          <button class="filter-btn" data-filter="dog">🐶 Dogs</button>
+          <button class="filter-btn" data-filter="cat">🐱 Cats</button>
+          <button class="filter-btn" data-filter="other">🐰 Small Pets</button>
+        </div>
+
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="petSearchInput" placeholder="Search by name, breed, or trait..." />
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+        <span id="petsCountIndicator" style="font-size: 0.95rem; font-weight: 600; color: var(--color-text-muted);">
+          Showing available pets...
+        </span>
+      </div>
+
+      <!-- Pet Cards Grid -->
+      <div id="catalogPetsContainer" class="pet-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Shelter Help Banner -->
+  <section class="section" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border); margin-top: 60px;">
+    <div class="container" style="text-align: center; max-width: 680px;">
+      <h3 style="font-size: 1.6rem; margin-bottom: 12px;">Not seeing the right match?</h3>
+      <p style="color: var(--color-text-muted); margin-bottom: 24px;">
+        We rescue new animals every week! Join our pet notification list or contact our adoption coordinators to share what kind of friend you're looking for.
+      </p>
+      <a href="contact.html" class="btn btn-outline">Send Us an Inquiry &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🐾 Paws &amp; Hearts</h3>
+          <p>
+            Dedicated to rescuing, rehabilitating, and rehoming pets into safe, loving environments since 2018.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="adopt.html">Adoption Form</a></li>
+            <li><a href="about.html">About &amp; FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Shelter Hours</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">Mon - Fri: 10:00 AM - 6:00 PM</p>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">Sat - Sun: 10:00 AM - 4:00 PM</p>
+          <p style="font-size: 0.9rem; color: var(--color-accent);">Walk-ins welcome on weekends!</p>
+        </div>
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">📍 104 Hope Meadows Lane</p>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">📞 (555) 234-PAWS</p>
+          <p style="font-size: 0.9rem;">✉️ info@pawsandhearts.org</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Paws &amp; Hearts Pet Rescue &amp; Adoption. All rights reserved.</div>
+        <div>Built with love for animals everywhere.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/pets-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

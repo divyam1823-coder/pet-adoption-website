@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us &amp; Visit | Paws & Hearts</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Site Header & Nav -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        Paws &amp; <span class="highlight">Hearts</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pets.html">Available Pets</a>
+        <a href="adopt.html">Adoption Process</a>
+        <a href="about.html">About Us &amp; FAQ</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="pets.html" class="btn btn-primary btn-sm">Find a Pet</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section" style="padding: 48px 0 20px;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 30px;">
+        <span class="section-tag">Get In Touch</span>
+        <h1 class="section-title">Visit Our Center or Say Hello</h1>
+        <p class="section-subtitle">
+          Have questions about adoption, volunteering, or donations? We'd love to hear from you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="section" style="padding-top: 10px;">
+    <div class="container contact-layout">
+      
+      <!-- Contact Info Card -->
+      <div class="contact-card">
+        <h2 style="font-size: 1.45rem; margin-bottom: 8px;">Shelter Headquarters</h2>
+        <p style="color: var(--color-text-muted); font-size: 0.95rem;">
+          Our modern rescue facility features air-conditioned cat lounges, outdoor dog play yards, and private meet-and-greet rooms.
+        </p>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-text">
+              <h4>Physical Address</h4>
+              <p>104 Hope Meadows Lane<br />Seattle, WA 98101</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🕒</div>
+            <div class="contact-info-text">
+              <h4>Visiting &amp; Adoption Hours</h4>
+              <p>Monday – Friday: 10:00 AM – 6:00 PM<br />Saturday – Sunday: 10:00 AM – 4:00 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div class="contact-info-text">
+              <h4>Telephone</h4>
+              <p>Main Line: (555) 234-PAWS<br />Emergency Rescue: (555) 234-7372</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <div class="contact-info-text">
+              <h4>Email Inquiries</h4>
+              <p>General: info@pawsandhearts.org<br />Adoptions: adopt@pawsandhearts.org</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 32px; background: var(--color-surface-soft); padding: 16px; border-radius: var(--radius-sm); font-size: 0.9rem; color: var(--color-text-muted);">
+          🚗 <strong>Free Visitor Parking:</strong> Available in the front designated shelter lot. Service and guide animals are welcome.
+        </div>
+      </div>
+
+      <!-- Contact Message Form -->
+      <div class="contact-card">
+        <h2 style="font-size: 1.45rem; margin-bottom: 6px;">Send Us a Message</h2>
+        <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 24px;">
+          Fill out the form below and an adoption counselor or team member will reply within 24 hours.
+        </p>
+
+        <form id="contactInquiryForm">
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Alex Morgan" required />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Email Address *</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="alex@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject" class="form-label">Topic *</label>
+            <select id="contactSubject" class="form-control" required>
+              <option value="Adoption Question">Question about a specific pet</option>
+              <option value="Meet and Greet">Schedule a Meet &amp; Greet</option>
+              <option value="Fostering & Volunteering">Fostering or Volunteering</option>
+              <option value="Donation Inquiry">Donations &amp; Sponsorships</option>
+              <option value="General Question">General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage" class="form-label">Your Message *</label>
+            <textarea id="contactMessage" class="form-control" placeholder="How can we assist you today?" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" style="padding: 14px;">
+            Send Message &rarr;
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Message Confirmation Modal -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-content">
+      <div class="modal-icon">✉️</div>
+      <h3 class="modal-title">Message Sent!</h3>
+      <p class="modal-desc" id="contactModalMessage">
+        Thank you! We've received your note and will be in touch with you shortly.
+      </p>
+      <button type="button" class="btn btn-primary btn-sm" id="closeContactModalBtn">Close</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🐾 Paws &amp; Hearts</h3>
+          <p>
+            Dedicated to rescuing, rehabilitating, and rehoming pets into safe, loving environments since 2018.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="adopt.html">Adoption Form</a></li>
+            <li><a href="about.html">About &amp; FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Shelter Hours</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">Mon - Fri: 10:00 AM - 6:00 PM</p>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">Sat - Sun: 10:00 AM - 4:00 PM</p>
+          <p style="font-size: 0.9rem; color: var(--color-accent);">Walk-ins welcome on weekends!</p>
+        </div>
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">📍 104 Hope Meadows Lane</p>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">📞 (555) 234-PAWS</p>
+          <p style="font-size: 0.9rem;">✉️ info@pawsandhearts.org</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Paws &amp; Hearts Pet Rescue &amp; Adoption. All rights reserved.</div>
+        <div>Built with love for animals everywhere.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/pets-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

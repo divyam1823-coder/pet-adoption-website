@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adoption Application | Paws & Hearts</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Site Header & Nav -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        Paws &amp; <span class="highlight">Hearts</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pets.html">Available Pets</a>
+        <a href="adopt.html" class="active">Adoption Process</a>
+        <a href="about.html">About Us &amp; FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="pets.html" class="btn btn-secondary btn-sm">Browse Pets</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Form Page Header -->
+  <section class="section" style="padding: 48px 0 20px;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 30px;">
+        <span class="section-tag">Start Your Journey</span>
+        <h1 class="section-title">Adoption Application</h1>
+        <p class="section-subtitle">
+          Please fill out this form so we can help match you with the companion that best suits your lifestyle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="form-card">
+        <form id="adoptionApplicationForm">
+          
+          <!-- Section 1: Pet Choice -->
+          <div class="form-section">
+            <h2 class="form-section-title">1. Desired Pet</h2>
+            <div class="form-group">
+              <label for="petSelect" class="form-label">Which pet are you interested in adopting? *</label>
+              <select id="petSelect" class="form-control" required>
+                <option value="">-- Choose a pet or select 'Any' --</option>
+                <option value="First Match">No specific preference (Recommend the best match)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Section 2: Contact Information -->
+          <div class="form-section">
+            <h2 class="form-section-title">2. Your Contact Details</h2>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="applicantName" class="form-label">Full Name *</label>
+                <input type="text" id="applicantName" class="form-control" placeholder="Jane Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="applicantEmail" class="form-label">Email Address *</label>
+                <input type="email" id="applicantEmail" class="form-control" placeholder="jane@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="applicantPhone" class="form-label">Phone Number *</label>
+                <input type="tel" id="applicantPhone" class="form-control" placeholder="(555) 000-0000" required />
+              </div>
+              <div class="form-group">
+                <label for="applicantCity" class="form-label">City &amp; Postal Code *</label>
+                <input type="text" id="applicantCity" class="form-control" placeholder="Seattle, WA 98101" required />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Household & Lifestyle -->
+          <div class="form-section">
+            <h2 class="form-section-title">3. Living Environment &amp; Household</h2>
+            
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="homeType" class="form-label">Housing Type *</label>
+                <select id="homeType" class="form-control" required>
+                  <option value="Single Family House">Single Family House</option>
+                  <option value="Apartment">Apartment</option>
+                  <option value="Townhouse / Condo">Townhouse / Condo</option>
+                  <option value="Farm / Rural Property">Farm / Rural Property</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="ownRent" class="form-label">Do you own or rent? *</label>
+                <select id="ownRent" class="form-control" required>
+                  <option value="Own">Own</option>
+                  <option value="Rent">Rent (Landlord allows pets)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="yardType" class="form-label">Yard Information</label>
+                <select id="yardType" class="form-control">
+                  <option value="Fully Fenced Yard">Fully Fenced Yard</option>
+                  <option value="Partially Fenced">Partially Fenced</option>
+                  <option value="No Yard / Nearby Parks">No Private Yard (Nearby Parks)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="hoursAlone" class="form-label">Hours pet may be alone daily *</label>
+                <select id="hoursAlone" class="form-control" required>
+                  <option value="0-2 hours">0 - 2 hours (Work from home / retired)</option>
+                  <option value="2-5 hours">2 - 5 hours</option>
+                  <option value="5-8 hours">5 - 8 hours</option>
+                  <option value="8+ hours">8+ hours</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="currentPets" class="form-label">Current Pets in Home &amp; Ages</label>
+              <input type="text" id="currentPets" class="form-control" placeholder="e.g. 1 cat (5 yrs), 1 golden retriever (7 yrs), or None" />
+            </div>
+
+            <div class="form-group">
+              <label for="petExperience" class="form-label">Tell us briefly why you want to adopt and your pet care experience:</label>
+              <textarea id="petExperience" class="form-control" placeholder="Describe your daily routine, experience with training, or why this pet caught your eye..."></textarea>
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="agreementCheck" required />
+              <label for="agreementCheck" style="font-size: 0.9rem; color: var(--color-text-muted);">
+                I confirm that all members of my household agree to this adoption, and all information provided is accurate and truthful.
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" style="padding: 16px; font-size: 1.05rem;">
+            Submit Adoption Application &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confirmation Modal -->
+  <div class="modal-overlay" id="confirmationModal">
+    <div class="modal-content">
+      <div class="modal-icon">✓</div>
+      <h3 class="modal-title">Application Submitted!</h3>
+      <p class="modal-desc" id="modalMessage">
+        Thank you for opening your heart to a rescue pet! Our adoption team will reach out within 24 to 48 hours to discuss next steps and arrange a meet &amp; greet.
+      </p>
+      <div style="display: flex; gap: 12px; justify-content: center;">
+        <a href="pets.html" class="btn btn-outline btn-sm">Explore More Pets</a>
+        <button type="button" class="btn btn-primary btn-sm" id="closeModalBtn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🐾 Paws &amp; Hearts</h3>
+          <p>
+            Dedicated to rescuing, rehabilitating, and rehoming pets into safe, loving environments since 2018.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="adopt.html">Adoption Form</a></li>
+            <li><a href="about.html">About &amp; FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Shelter Hours</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">Mon - Fri: 10:00 AM - 6:00 PM</p>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">Sat - Sun: 10:00 AM - 4:00 PM</p>
+          <p style="font-size: 0.9rem; color: var(--color-accent);">Walk-ins welcome on weekends!</p>
+        </div>
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">📍 104 Hope Meadows Lane</p>
+          <p style="font-size: 0.9rem; margin-bottom: 6px;">📞 (555) 234-PAWS</p>
+          <p style="font-size: 0.9rem;">✉️ info@pawsandhearts.org</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Paws &amp; Hearts Pet Rescue &amp; Adoption. All rights reserved.</div>
+        <div>Built with love for animals everywhere.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/pets-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
