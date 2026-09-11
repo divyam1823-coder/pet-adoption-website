@@ -26,16 +26,7 @@ A modern, responsive, and lightweight multi-page Pet Adoption website designed w
 
 ---
 
-## 🚀 How to View & Run
 
-You can open the website immediately in any web browser:
-
-1. **Direct Double-Click**:
-   - Double-click on `index.html` inside `C:\Users\DELL\.gemini\antigravity\scratch\pet-adoption-website` to open it in your default web browser (Edge, Chrome, Firefox, etc.).
-
-2. **From File Explorer or VS Code**:
-   - You can open the `pet-adoption-website` directory as your active workspace in VS Code or your preferred editor.
-   - Use the "Live Server" extension or open `index.html` directly.
 
 ---
 
